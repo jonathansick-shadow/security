@@ -1,0 +1,6 @@
+# -*- python -*-
+Import("env")
+
+env.CheckSwig("python", ilang="c++", includedProducts="utils")
+lsstLibs = "pex_logging pex_exceptions daf_base".split()
+env.LoadableModuleIncomplete("_securityLib", Split("securityLib.i"), LIBS=env.libs["boost"] + ["security"] + lsstLibs)

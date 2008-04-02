@@ -1,0 +1,12 @@
+# -*- python -*-
+Import('env')
+import os
+
+sourceFiles = ["../src/" + fn for fn in os.listdir("../src/") if fn.endswith(".cc")]
+lsstLibs = "daf_base pex_logging".split()
+
+env.SharedLibrary(
+    'security',
+    sourceFiles,
+    LIBS=env.getlibs("boost") + lsstLibs,
+)
