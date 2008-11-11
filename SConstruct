@@ -8,6 +8,7 @@ import lsst.SConsUtils as scons
 env = scons.makeEnv("security",
                     r"$HeadURL$",
                     [["boost", "boost/version.hpp", "boost_filesystem:C++"],
+                     ["boost", "boost/version.hpp", "boost_filesystem:C++"],
                      ["python", "Python.h"],
                      ["utils", "lsst/utils/Demangle.h", "utils:C++"],
                      ["daf_base", "lsst/daf/base.h", "daf_base:C++"],
