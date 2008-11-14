@@ -9,24 +9,17 @@ Access to the lsst::security classes
 %module(package="lsst.security", docstring=securityLib_DOCSTRING) securityLib
 
 %{
+#include "lsst/daf/base.h"
 #include "lsst/security/Security.h"
-%}
-
-%inline %{
-namespace lsst { namespace security { } }
-    
-using namespace lsst::security;
-%}
-
-%init %{
 %}
 
 %include "lsst/p_lsstSwig.i"
 
+%import "lsst/daf/base/baseLib.i"
+
+%lsst_exceptions();
+
+SWIG_SHARED_PTR(Security, lsst::security::Security)
+
 %include "lsst/security/Security.h"
 
-
-/******************************************************************************/
-// Local Variables: ***
-// eval: (setq indent-tabs-mode nil) ***
-// End: ***
