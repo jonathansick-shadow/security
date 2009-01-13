@@ -7,5 +7,5 @@ sourceFiles = ["../src/" + fn for fn in os.listdir("../src/") if fn.endswith(".c
 env.SharedLibrary(
     'security',
     sourceFiles,
-    LIBS=env.getlibs("boost utils daf_base pex_logging")
+    LIBS=env.getlibs("boost utils pex_exceptions daf_base pex_logging")
 )
