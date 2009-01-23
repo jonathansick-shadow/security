@@ -19,7 +19,7 @@ Access to the lsst::security classes
 
 %lsst_exceptions();
 
-SWIG_SHARED_PTR(Security, lsst::security::Security)
+SWIG_SHARED_PTR_DERIVED(Security, lsst::security::Security, lsst::daf::base::Citizen)
 
 %include "lsst/security/Security.h"
 

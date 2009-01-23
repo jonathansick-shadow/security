@@ -2,13 +2,13 @@
 /**
   * \class Security
   *
-  * \ingroup daf
+  * \ingroup security
   *
   * \brief Implements the logic that enforces the access and authorization 
   *  rules that apply to an LsstData Realization.
   * 
   * 
-  * \note OUT OF SCOPE FOR DC2 - stub implementation
+  * \note OUT OF SCOPE FOR DC3 - stub implementation
   * 
   * \author  $Author::                                                        $
   * \version $Rev::                                                           $
