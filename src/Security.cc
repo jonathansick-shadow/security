@@ -69,7 +69,7 @@ Security::Security(const Security& from) : lsst::daf::base::Citizen( typeid(this
 }
 
 
-Security::Security& Security::operator= (const Security&){
+Security& Security::operator= (const Security&){
     execTrace("Security::operator= (const Security&)");
     return *this;
 }
