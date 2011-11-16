@@ -1,0 +1,18 @@
+
+# /
+/.*
+/config.log
+
+# /doc/
+/doc/htmlDir
+
+# /lib/
+/lib/*.dylib
+/lib/*.so
+
+# /python/lsst/security/
+/python/lsst/security/securityLib.py
+/python/lsst/security/securityLib_wrap.*
+
+# /src/
+/src/*.os
